@@ -30,13 +30,20 @@
             <h1>WILDHEART</h1>
             <hr>
             <div class="character-image">
-                <img src="img/icon.jpg" alt="Character">
+                <span class="arrow left-arrow">&#10094;</span>
+                <img src="img/icon.jpg" alt="Image 1" class="active">
+                <img src="img/icon2.jpg" alt="Image 2">
+                <img src="img/icon3.jpg" alt="Image 3">
+                <span class="arrow right-arrow">&#10095;</span>
             </div>
+            
             <div class="text-container">
                 <p class="description">The heaviest burden is not the beast that shackles my spirit.</p>
                 <p class="description">The heaviest burden are the scars it leaves when I shed my wild skin.</p>
             </div>
             <hr>
+
+            
             <div class="push"></div>
 
             <footer>
@@ -46,5 +53,20 @@
 
     </div>
     <script src="nav.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.character-image img');
+            let currentIndex = 0;
+
+            function changeImage(step) {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + step + images.length) % images.length;
+                images[currentIndex].classList.add('active');
+            }
+
+            document.querySelector('.left-arrow').addEventListener('click', () => changeImage(-1));
+            document.querySelector('.right-arrow').addEventListener('click', () => changeImage(1));
+        });
+    </script>
 </body>
 </html>

@@ -32,7 +32,10 @@
             <hr>
             
             <div class="character-image">
-                <img src="img/bear.jpg" alt="Background Image">
+                <span class="arrow left-arrow">&#10094;</span>
+                <img src="img/bear.jpg" alt="Image 1" class="active">
+                <img src="img/wolf1.jpg" alt="Image 2">
+                <span class="arrow right-arrow">&#10095;</span>
             </div>
             
             <hr>
@@ -91,6 +94,21 @@
         </div>
     </div>
     <script src="nav.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.character-image img');
+            let currentIndex = 0;
+
+            function changeImage(step) {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + step + images.length) % images.length;
+                images[currentIndex].classList.add('active');
+            }
+
+            document.querySelector('.left-arrow').addEventListener('click', () => changeImage(-1));
+            document.querySelector('.right-arrow').addEventListener('click', () => changeImage(1));
+        });
+    </script>
 
 </body>
 </html>

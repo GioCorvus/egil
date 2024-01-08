@@ -142,6 +142,127 @@ nav a:hover {
     color: #ddd;
 }
 
+/*STATS*/
+
+/* D&D Stats Section */
+.stats-section {
+    text-align: center;
+}
+
+.stats-section img {
+    width: 100%;
+    max-width: 400px; /* Adjust image max-width as needed */
+    border-radius: 10px;
+}
+
+.stats-section h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.stats-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Alignment Section */
+.alignment-section {
+    text-align: center;
+}
+
+.alignment-section img {
+    width: 100%;
+    max-width: 400px; /* Adjust image max-width as needed */
+    border-radius: 10px;
+}
+
+.alignment-section h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.alignment-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Skills Section */
+/* Stats Section */
+.stats-section {
+    text-align: center;
+}
+
+.stats-section img {
+    max-width: 200px; /* Adjust image max-width as needed */
+    border-radius: 10px;
+}
+
+.stats-section h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.stats-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Stats Details Section */
+.stats-details-section {
+    text-align: center;
+}
+
+.stats-details-section h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.stats-details-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stats-details-section li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Skills Section */
+.skills-section {
+    text-align: center;
+}
+
+.skills-section img {
+    width: 100%;
+    max-width: 400px; /* Adjust image max-width as needed */
+    border-radius: 10px;
+}
+
+.skills-section h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-section li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.icon{
+    max-width: 100px;
+}
 
 /* FOOTER*/
 footer {
